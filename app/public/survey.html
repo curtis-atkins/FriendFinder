@@ -5,8 +5,11 @@
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 
     <title>2'z Companee | Survey</title><!--Link for bootstrap-->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet"><!--link for iconic package of icons optimized for bootstrap-->
-    <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
@@ -17,130 +20,132 @@
         <form>
             <div class="form-group">
                 <label for="name">NAME (REQUIRED)</label> 
-				<input class="form-control" id="name" placeholder="JANNIE FOOTBALL" type="name">
+				<input class="form-control" id="name" placeholder="TWOZ COMPANEE" type="name" required>
             </div>
             <div class="form-group">
-                <label for="email">EMAIL (REQUIRED)</label> 
-				<input class="form-control" id="email" placeholder="JANNIE@???.COM" type="email">
+                <label for="email">UPLOAD A PHOTO (REQUIRED)</label> 
+				<input class="form-control" id="photo" placeholder="PASTE YOUR PHOTO LINK HERE" type="file" required>
             </div>
-			
+
+            <h6>Rate the following questions where: 1 = Strongly Disagree, 5 = Strongly Agree</h6>
+			<br>
             <h4>1. Do you eat at restaurants frequently?</h4>
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Answer</label> 
-				<select class="chosen-select" data-placeholder="" id="q1">
-                    <option>1 (Totally Disagree)</option>
+                <label for="exampleFormControlSelect1">Answer:</label> 
+				<select class="chosen-select" data-placeholder="" id="q1" required>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (Totally Agree)</option>
+                    <option>5</option>
                 </select>
             </div>
 
             <h4>2. Do you enjoy watching movies?</h4>
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Answer</label> 
-				<select class="chosen-select" data-placeholder="" id="q2">
-                    <option>1 (Totally Disagree)</option>
+                <label for="exampleFormControlSelect1">Answer:</label> 
+				<select class="chosen-select" data-placeholder="" id="q2" required>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (Totally Agree)</option>
+                    <option>5</option>
                 </select>
             </div>
 
             <h4>3. Do you frequently go out for a night on the town?</h4>
 			<div class="form-group">
-                <label for="exampleFormControlSelect1">Answer</label> 
-				<select class="chosen-select" data-placeholder="" id="q3">
-                     <option>1 (Totally Disagree)</option>
+                <label for="exampleFormControlSelect1">Answer:</label> 
+				<select class="chosen-select" data-placeholder="" id="q3" required>
+                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (Totally Agree)</option>
+                    <option>5</option>
                 </select>
             </div>
 
             <h4>4. Do you consider yourself an intellectual?</h4>
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Answer</label> 
-				<select class="chosen-select" data-placeholder="" id="q4">
-                    <option>1 (Totally Disagree)</option>
+                <label for="exampleFormControlSelect1">Answer:</label> 
+				<select class="chosen-select" data-placeholder="" id="q4" required>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (Totally Agree)</option>
+                    <option>5</option>
                 </select>
             </div>
 
             <h4>5. Do you mind doing athletic activities?</h4>
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Answer</label> 
-				<select class="chosen-select" data-placeholder="" id="q5">
-                    <option>1 (Totally Disagree)</option>
+                <label for="exampleFormControlSelect1">Answer:</label> 
+				<select class="chosen-select" data-placeholder="" id="q5" required>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (Totally Agree)</option>
+                    <option>5</option>
                 </select>
             </div>
 
             <h4>6. Are you a lover of music?</h4>
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Answer</label> 
-				<select class="chosen-select" data-placeholder="" id="q6">
-                    <option>1 (Totally Disagree)</option>
+                <label for="exampleFormControlSelect1">Answer:</label> 
+				<select class="chosen-select" data-placeholder="" id="q6" required>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (Totally Agree)</option>
+                    <option>5</option>
                 </select>
             </div>
 
             <h4>7. Are you willing to go dutch on a date?</h4>
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Answer</label> 
-				<select class="chosen-select" data-placeholder="" id="q7">
-                    <option>1 (Totally Disagree)</option>
+                <label for="exampleFormControlSelect1">Answer:</label> 
+				<select class="chosen-select" data-placeholder="" id="q7" required>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (Totally Agree)</option>
+                    <option>5</option>
                 </select>
             </div>
 
             <h4>8. Do you buy new clothes every month?</h4>
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Answer</label> 
-				<select class="chosen-select" data-placeholder="" id="q8">
-                    <option>1 (Totally Disagree)</option>
+                <label for="exampleFormControlSelect1">Answer:</label> 
+				<select class="chosen-select" data-placeholder="" id="q8" required>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (Totally Agree)</option>
+                    <option>5</option>
                 </select>
             </div>
 
             <h4>9. Do you play video games?</h4>
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Answer</label> 
-				<select class="chosen-select" data-placeholder="" id="q9">
-                    <option>1 (Totally Disagree)</option>
+                <label for="exampleFormControlSelect1">Answer:</label> 
+				<select class="chosen-select" data-placeholder="" id="q9" required>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (Totally Agree)</option>
+                    <option>5</option>
                 </select>
             </div>
 
             <h4>10. Do you live on the wild side?</h4>
             <div class="form-group">
-                <label for="exampleFormControlSelect1">Answer</label> 
-				<select class="chosen-select" data-placeholder="" id="q10">
-                    <option>1 (Totally Disagree)</option>
+                <label for="exampleFormControlSelect1">Answer:</label> 
+				<select class="chosen-select" data-placeholder="" id="q10" required>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (Totally Agree)</option>
+                    <option>5</option>
                 </select>
             </div>
         </form>
@@ -155,3 +160,55 @@
     </div>
 </body>
 </html>
+
+<script>
+//when the submit button is clicked, the values of the input elements of
+//the survey.html file are trimmed and placed into a variable "newFriends"
+$("#submit").on("click", function(){
+
+var newFriends = {
+    name: $("#name").val().trim(),
+    photo: $("#photo").val().trim(),
+    question1: $("#q1").val().trim(),
+    question2: $("#q2").val().trim(),
+    question3: $("#q3").val().trim(),
+    question4: $("#q4").val().trim(),
+    question5: $("#q5").val().trim(),
+    question6: $("#q6").val().trim(),
+    question7: $("#q7").val().trim(),
+    question8: $("#q8").val().trim(),
+    question9: $("#q9").val().trim(),
+    question10: $("#q10").val().trim()
+}
+//prints variable newFriends
+console.log(newFriends);
+
+//create a variable
+var currentURL = window.location.origin;
+
+
+    $.post(currentURL + "/api/friends", newFriends,
+    function(data){
+        if (data == true){
+            alert("Your Friend profile has been submitted");
+        }
+        if(data == false){
+            alert("You forgot to submit a question");
+        }
+
+        name: $("#name").val("");
+        photo: $("#photo").val("");
+        question1: $("#q1").val("");
+        question2: $("#q2").val("");
+        question3: $("#q3").val("");
+        question4: $("#q4").val("");
+        question5: $("#q5").val("");
+        question6: $("#q6").val("");
+        question7: $("#q7").val("");
+        question8: $("#q8").val("");
+        question9: $("#q9").val("");
+        question10: $("#q10").val("");
+    })
+
+})
+</script>
