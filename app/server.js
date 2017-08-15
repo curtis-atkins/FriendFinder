@@ -1,10 +1,12 @@
-const http = require("http");
-const express = require("express");
 const bodyParser = require("body-parser");
+
+const http = require("http");
+
 const path = require("path");
 
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
+const express = require("express");
 const app = express();
 
 app.use(bodyParser.json());
@@ -20,12 +22,14 @@ app.listen(PORT, function() {
 
 var friends = [];
 
+app.get("/", function(req, res) {
+  res.sendFile(path.join(__dirname, "./public/home.html"));
+});
+
 app.get("/survey", function(req, res) {
   res.sendFile(path.join(__dirname, "./public/survey.html"));
 });
 
-app.get("/", function(req, res) {
-  res.sendFile(path.join(__dirname, "./public/home.html"));
-});
+
 
 
