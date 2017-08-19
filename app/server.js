@@ -1,13 +1,13 @@
 const bodyParser = require("body-parser");
+const express = require("express");
 
-const http = require("http");
-
+const app = express();
 const path = require("path");
 
 const PORT = process.env.PORT || 8000;
 
-const express = require("express");
-const app = express();
+
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -30,6 +30,11 @@ app.get("/survey", function(req, res) {
   res.sendFile(path.join(__dirname, "./public/survey.html"));
 });
 
+/*app.get("/api/friends", function(req, res) {
+  res.sendFile(path.join(__dirname, "./public/survey.html"));
+});*/
 
-
-
+app.post("/api/friends", function(req, res) {
+  var newFriends = req.body;
+    console.log(newFriends);
+});
